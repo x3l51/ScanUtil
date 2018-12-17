@@ -2,7 +2,7 @@ function ScanUtil
 {
     ## Get info on host/ port/s
     $computer = Read-Host "`nEnter IP adress or qualified domain name"
-    $port = Read-Host "`nSeperate multiple ports that should be scanned by`ncoma or press enter to scan a standard set of ports"
+    $port = Read-Host "`nSeperate multiple ports that should be scanned by`ncomma or press enter to scan a standard set of ports"
 
     ## Set port variable to set of standard ports when nothing has been entered
     if (!$port)
