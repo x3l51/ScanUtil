@@ -6,10 +6,9 @@ function ScanUtil
         If ($adress -eq $computer)
             {Write-Host "Domain name is:" $ahost -ForegroundColor Green}
         else {Write-Host "IP adress is:" $adress -ForegroundColor Green}
-        Write-Host 
-            $port.split(',') | Foreach-Object -Process {
-                If (($a=Test-NetConnection $computer -Port $_ -WarningAction SilentlyContinue).tcpTestSucceeded -eq $true) 
-                    {Write-Host $a.Computername"Port" $a.RemotePort -ForegroundColor Green "is open"} 
-                else {Write-Host $a.Computername"Port" $a.RemotePort -ForegroundColor Red "is closed"}
-            }
+        $port.split(',') | Foreach-Object -Process {
+            If (($a=Test-NetConnection $computer -Port $_ -WarningAction SilentlyContinue).tcpTestSucceeded -eq $true) 
+                {Write-Host $a.Computername"Port" $a.RemotePort -ForegroundColor Green "is open"} 
+            else {Write-Host $a.Computername"Port" $a.RemotePort -ForegroundColor Red "is closed"}
+        }
     }
