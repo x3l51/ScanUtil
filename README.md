@@ -7,7 +7,7 @@ PS C:\Windows\System32\WindowsPowerShell> ScanUtil
 Enter IP adress or qualified domain name: google.ca
 
 Seperate multiple ports that should be scanned by
-coma or press enter to scan a standard set of ports: 80,443,555
+comma or press enter to scan a standard set of ports: 80,443,555
 
 IP adress is: 216.58.210.3
 
