@@ -1,5 +1,5 @@
 # ScanUtil
-Utility to scan Host for open ports
+Utility to scan Host for open ports via PowerShell
 
 ```
 PS C:\Windows\System32\WindowsPowerShell> ScanUtil
